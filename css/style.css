@@ -1,0 +1,194 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Verdana', Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background: #4A90E2;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+#title h1 {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#comprar-btn {
+    background: #fff;
+    color: #4A90E2;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+aside h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+aside h2 span {
+    display: block;
+    font-weight: normal;
+}
+
+aside p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    padding: 15px;
+    font-size: 1rem;
+    background: #fff;
+    color: #4A90E2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #e0e0e0;
+}
+
+/* Artigo */
+article {
+    flex: 1;
+    max-width: 500px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Rodapé */
+footer {
+    background: #4A90E2;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Contatos */
+#contatos {
+    text-align: center;
+    padding: 2rem 0;
+    background: #f4f4f4;
+}
+
+#contatos h2 {
+    margin-bottom: 1.5rem;
+    color: #4A90E2;
+}
+
+#contatos div {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#contatos img {
+    transition: transform 0.3s ease;
+}
+
+#contatos img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+}
